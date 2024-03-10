@@ -1,9 +1,6 @@
 import React, { useState } from "react";
-// import BackButton from '../components/BackButton';
-// import Spinner from '../components/Spinner';
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-// import { useSnackbar } from 'notistack';
 
 const CreateBook = () => {
     const [username, setusername] = useState("");
@@ -16,7 +13,7 @@ const CreateBook = () => {
 
     const navigate = useNavigate();
 
-    const handlebook = () => {
+    const handleuser = () => {
         const data = {
             username,
             branch,
@@ -69,7 +66,7 @@ const CreateBook = () => {
         //                 className='w-full px-4 py-2 border-2 border-gray-500 '
         //             />
         //         </div>
-        //         <button className='p-2 m-8 bg-sky-300' onClick={handlebook}>
+        //         <button className='p-2 m-8 bg-sky-300' onClick={handleuser}>
         //             Save
         //         </button>
         //     </div>
@@ -77,7 +74,7 @@ const CreateBook = () => {
         <div className="flex items-center justify-center min-h-screen text-white bg-gray-900">
             <div className="p-4 bg-purple-900 rounded-lg shadow-lg w-96">
                 <div className="text-center">
-                    <h1 className="my-4 text-3xl">Edit Book</h1>
+                    <h1 className="my-4 text-3xl">Create User</h1>
                     {/* {loading ? <Spinner /> : ''} */}
                 </div>
                 <div className="my-4">
@@ -138,7 +135,7 @@ const CreateBook = () => {
 
                 <button
                     className="p-2 m-8 text-white bg-purple-600 rounded hover:bg-purple-700"
-                    onClick={handlebook}
+                    onClick={handleuser}
                 >
                     Save
                 </button>

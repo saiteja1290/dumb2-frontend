@@ -31,15 +31,9 @@ const Home = () => {
     return (
         <div className="min-h-screen text-white bg-gray-900">
             <header className="p-4 text-center">
-                <h1 className="text-3xl font-bold">My Bookstore</h1>
+                <h1 className="text-3xl font-bold">Leaderboard (Overall)</h1>
             </header>
-            <div className="flex items-center justify-center">
-                <h1 className="my-8 text-3xl"></h1>
-                <Link to="/books/create">
-                    <MdOutlineAddBox className="text-3xl text-sky-200"></MdOutlineAddBox>
-                </Link>
-            </div>
-            <main className="container mx-auto mt-4">
+            {/* <main className="container mx-auto mt-4">
                 <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
                     {books.map((book) => (
                         <div
@@ -70,25 +64,13 @@ const Home = () => {
                         </div>
                     ))}
                 </div>
-            </main>
-            <button className="bg-purple-600 text-white px-2 py-1 rounded">
-                <Link to={`/contest_1`}>Contests</Link>
-            </button>
-            <footer className="py-4 text-center text-white-400">
-                Made with
-                <br />
-                <span className="m-2 text-2xl">mongoDB</span>
-                <span className="m-2 text-2xl">
-                    express
-                    <FontAwesomeIcon icon={faJs} />
-                </span>
-                <span className="m-2 text-2xl">
-                    <FontAwesomeIcon icon={faReact} />
-                </span>
-                <span className="m-2 text-2xl">
-                    <FontAwesomeIcon icon={faNodeJs} />
-                </span>
-            </footer>
+            </main> */}
+            <center>
+                <button type="button" class="py-2.5 px-5 me-2 mb-2 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">
+                    <Link to={`/create`}>Create User</Link></button>
+            </center>
+
+
         </div>
     );
 };
