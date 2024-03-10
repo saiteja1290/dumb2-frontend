@@ -70,7 +70,7 @@ const Contest_1 = () => {
                                 Overall Rank
                             </th>
                             <th scope="col" class="px-6 py-3">
-                                Branch Rank
+                                Branch Ranks
                             </th>
                             <th scope="col" class="px-6 py-3">
                                 Rating
