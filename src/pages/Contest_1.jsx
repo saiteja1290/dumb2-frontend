@@ -19,29 +19,9 @@ const Contest_1 = () => {
         axios
             .get(`${backEndUrl}/books`)
             .then((response) => {
-                // Sort books array in descending order of ratings
-                const sortedBooks = response.data.data.sort(
-                    (a, b) => b.rating - a.rating
-                );
 
-                // Adjust overall rank based on new order
-                sortedBooks.forEach((book, index) => {
-                    book.overall_rank = index + 1;
-                });
-
-                // Adjust branch rank based on new order within each branch
-                const branches = {};
-                sortedBooks.forEach((book) => {
-                    const branch = book.branch;
-                    if (!branches[branch]) {
-                        branches[branch] = 1;
-                    } else {
-                        branches[branch]++;
-                    }
-                    book.branch_rank = branches[branch];
-                });
-
-                setBooks(sortedBooks);
+                setBooks(response.data.data);
+                // console.log(response)
                 setLoading(false);
             })
             .catch((error) => {
@@ -67,13 +47,7 @@ const Contest_1 = () => {
                                 Branch
                             </th>
                             <th scope="col" class="px-6 py-3">
-                                Overall Rank
-                            </th>
-                            <th scope="col" class="px-6 py-3">
-                                Branch Ranks
-                            </th>
-                            <th scope="col" class="px-6 py-3">
-                                Rating
+                                Rank
                             </th>
                         </tr>
                     </thead>
@@ -88,12 +62,8 @@ const Contest_1 = () => {
                                 </td>
                                 <td className="px-6 py-4">{book.branch}</td>
                                 <td className="px-6 py-4">
-                                    {book.overall_rank}
+                                    {book.rank}
                                 </td>
-                                <td className="px-6 py-4">
-                                    {book.branch_rank}
-                                </td>
-                                <td className="px-6 py-4">{book.rating}</td>
                             </tr>
                         ))}
                     </tbody>
