@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-
-const CreateBook = () => {
+import LoginPage from "../components/LoginPage";
+const CreateBookPage = () => {
     const [username, setusername] = useState("");
     const [branch, setbranch] = useState("");
     const [rank, setrank] = useState("");
@@ -95,5 +95,20 @@ const CreateBook = () => {
         </div>
     );
 };
+const CreateBook = () => {
+    const [isAdmin, setIsAdmin] = useState(false);
+
+    return (
+        <div>
+            {isAdmin ? (
+                <CreateBookPage />
+            ) : (
+                <LoginPage onLogin={setIsAdmin} />
+            )}
+        </div>
+    );
+};
 
 export default CreateBook;
+
+// export default CreateBook;

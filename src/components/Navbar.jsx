@@ -23,6 +23,7 @@ const Navbar = () => {
                         <Link className='block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500' to={`/`}>Home</Link>
                         <Link className='block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500' to={`/compete`}>Compete</Link>
                         <Link className='block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500' to={`/past_contests`}>Past Contest's Leaderboard</Link>
+                        <Link className='block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500' to={`/admin`}>Admin</Link>
 
 
                     </ul>
