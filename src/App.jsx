@@ -7,8 +7,11 @@ import DeleteBook from "./pages/DeleteBook";
 import EditBook from "./pages/EditBook";
 import ShowBook from "./pages/ShowBook";
 import Contest_1 from "./pages/Contest_1";
+import Contest_2 from "./pages/Contest_2";
 import Compete from "./pages/Compete";
 import Past_contests from "./pages/Past_contests";
+// import AdminPage from "./pages/AdminPage";
+import MyApp from "./pages/AdminPage";
 import Navbar from "./components/Navbar";
 
 const App = () => {
@@ -21,8 +24,10 @@ const App = () => {
             <Route path="/books/edit/:id" element={<EditBook />} />
             <Route path="/books/delete/:id" element={<DeleteBook />} />
             <Route path="/contest_1" element={<Contest_1 />} />
+            <Route path="/contest_2" element={<Contest_2 />} />
             <Route path="/compete" element={<Compete />} />
             <Route path="/past_contests" element={<Past_contests />} />
+            <Route path="/admin" element={<MyApp />} />
         </Routes>
     );
 };

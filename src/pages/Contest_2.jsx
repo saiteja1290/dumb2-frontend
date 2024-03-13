@@ -8,7 +8,7 @@ import { MdOutlineAddBox, MdOutlineDelete } from "react-icons/md";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faReact, faNodeJs, faJs } from "@fortawesome/free-brands-svg-icons";
 
-const Contest_1 = () => {
+const Contest_2 = () => {
     const [books, setBooks] = useState([]);
     const [loading, setLoading] = useState(false);
     const [showType, setShowType] = useState("table");
@@ -23,7 +23,7 @@ const Contest_1 = () => {
                 const actualarr = [];
                 for (let index = 0; index < arr_1.length; index++) {
                     const element = arr_1[index].contest;
-                    if (element == 1) {
+                    if (element == 2) {
                         actualarr.push(arr_1[index])
                     }
 
@@ -113,4 +113,4 @@ const Contest_1 = () => {
     );
 };
 
-export default Contest_1;
+export default Contest_2;
