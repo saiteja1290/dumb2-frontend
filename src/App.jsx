@@ -11,7 +11,8 @@ import Past_contests from "./pages/Past_contests";
 // import AdminPage from "./pages/AdminPage";
 import MyApp from "./pages/AdminPage";
 import Navbar from "./components/Navbar";
-
+import UserPage from "./pages/UserPage";
+import Question_1 from "./questions/Question_1";
 const App = () => {
     return (
         <Routes>
@@ -24,6 +25,8 @@ const App = () => {
             <Route path="/compete" element={<Compete />} />
             <Route path="/past_contests" element={<Past_contests />} />
             <Route path="/admin" element={<MyApp />} />
+            <Route path="/users" element={<UserPage />} />
+            <Route path="/question_1" element={<Question_1 />} />
         </Routes>
     );
 };
