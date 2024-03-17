@@ -5,7 +5,7 @@ import Home from "./pages/Home";
 import CreateBook from "./pages/CreateBook";
 import ShowBook from "./pages/ShowBook";
 import Contest_1 from "./pages/Contest_1";
-import Contest_2 from "./pages/Contest_2";
+import Contest_2 from "./pages/contest2/Contest_2";
 import Compete from "./pages/Compete";
 import Past_contests from "./pages/Past_contests";
 // import AdminPage from "./pages/AdminPage";
@@ -22,11 +22,12 @@ const App = () => {
             <Route path="/books/details/:id" element={<ShowBook />} />
             <Route path="/contest_1" element={<Contest_1 />} />
             <Route path="/contest_2" element={<Contest_2 />} />
+            <Route path="/contest_2/question_1" element={<Question_1 />} />
+
             <Route path="/compete" element={<Compete />} />
             <Route path="/past_contests" element={<Past_contests />} />
             <Route path="/admin" element={<MyApp />} />
             <Route path="/users" element={<UserPage />} />
-            <Route path="/question_1" element={<Question_1 />} />
         </Routes>
     );
 };

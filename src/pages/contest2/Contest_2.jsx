@@ -109,6 +109,41 @@ const Contest_2 = () => {
                     </tbody>
                 </table>
             </div>
+
+
+            <div class="relative overflow-x-auto m-8 rounded-md">
+                <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                    <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                        <tr>
+                            <th scope="col" class="px-6 py-3">
+                                Question
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                rating
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                <Link to={`/contest_2/question_1`}>Question 1</Link>
+                            </th>
+                            <td class="px-6 py-4">
+                                Silver
+                            </td>
+                        </tr>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                <Link to={`/contest_2/question_2`}>Question 2</Link>
+                            </th>
+                            <td class="px-6 py-4">
+                                Silver
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
         </div>
     );
 };
