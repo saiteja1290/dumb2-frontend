@@ -69,8 +69,8 @@ NO
                     </pre>
                     <div className="mt-6">
                         <a
-                            href="/giantwheel.txt"
-                            download="giantwheel.txt"
+                            href="/makeequal.txt"
+                            download="makeequal.txt"
                             className="text-blue-200 hover:underline font-extrabold"
                         >
                             Download Input (Download this and run)
