@@ -13,6 +13,9 @@ import MyApp from "./pages/AdminPage";
 import Navbar from "./components/Navbar";
 import UserPage from "./pages/UserPage";
 import Question_1 from "./questions/Question_1";
+import BetaTest1 from "./pages/BetaTest1";
+import GiantWheel from "./questions/beta1/GiantWheel";
+import MakeEqual from "./questions/beta1/MakeEqual";
 const App = () => {
     return (
         <Routes>
@@ -28,6 +31,9 @@ const App = () => {
             <Route path="/past_contests" element={<Past_contests />} />
             <Route path="/admin" element={<MyApp />} />
             <Route path="/users" element={<UserPage />} />
+            <Route path="/compete/bt1" element={<BetaTest1 />} />
+            <Route path="/compete/bt1/ques1" element={<GiantWheel />} />
+            <Route path="/compete/bt1/ques2" element={<MakeEqual />} />
         </Routes>
     );
 };
