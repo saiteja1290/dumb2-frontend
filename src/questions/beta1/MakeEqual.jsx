@@ -42,7 +42,7 @@ const MakeEqual = () => {
                     </p>
                     <h2 className='text-lg font-semibold mt-6 my-2'>Output Format</h2>
                     <p className='mb-4'>
-                        For each test case, output on a new line the answer: "Yes" if it is possible to make all the elements of <code>A</code> equal, and "No" otherwise (without quotes).
+                        For each test case, output on a new line the answer:  if it is possible to make all the elements of <code>A</code> equal, and No otherwise (without quotes).
                         <br />
                         Each letter of the output may be printed in either uppercase or lowercase.
                     </p>
